@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- we use link element in head only -->
+    <!-- By using link element we can link css file to html  -->
+    <!-- The <link> element defines the relationship between the current document and an external resource. -->
+    <!-- The <link> tag is most often used to link to external style sheets: -->
+    <link rel="stylesheet" type="text/CSS" href="style.css" ;>
+    
+
+</head>
+<body>
+    <script>
+        function myfunction(){
+            document.getElementById('dem').innerHTML='Hello Javascript';
+        }
+    </script>
+    <button type="button" 
+    onclick="getElementById('demo').innerHTML = Date()">Click me to display date and time</button>
+    <p id="demo"></p>
+    <br/>
+    <a href="https://www.google.com">
+        <button>Click me to go on google</button>
+    </a>
+    <p id="demoo">JavaScript can change the style of an HTML element.</p>
+    <script>
+        function myfunction(){
+            document.getElementById("demoo").style.fontSize = "25px";
+            document.getElementById("demoo").style.color = "red";
+            document.getElementById("demoo").style.backgroundColor = "yellow";
+        }
+    </script>
+    <button type="button" onclick="myfunction()">Click Me!</button>
+    <br/>
+    <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  document.getElementById('Image').src = pic;
+}
+</script>
+
+<img id="Image" src="pic_bulbon.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<p id="dem">Click on the button i will change broo</p>
+<button type="button" onclick="myfunction()">Try</button>
+<hr/>
+<pre>
+    <code>
+        x=2;
+        y=4;
+        z=x+y;
+
+    </code>
+</pre>
+<h1>My First Emoji</h1>
+
+<p>&#128512;</p>
+<p>&#128151;</p>
+<p>&#128525;</p>
+
+</body>
+</html>
