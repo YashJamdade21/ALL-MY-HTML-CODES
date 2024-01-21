@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head >
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <meta http-equiv="refresh" content="20"/> -->
+        <link rel="stylesheet" href="">
+        <style>
+            .nav_ul{
+                background-color: rgb(236, 146, 29);
+                display: flex;
+                text-align: center;
+        
+            }
+            .list{
+                margin-right: 23px;
+                list-style-type:none;
+                font-size: xx-large;
+                cursor:pointer;
+            }
+            .list:hover{
+                text-transform: uppercase;
+            }
+            body  {
+                background-image: url("mqdefault.jpg");
+                background-color: #cccccc;
+}
+        </style>
+
+
+    </head>
+    <!-- style="background-image: url() -->
+    <body>
+        <!-- <p style="background-image: url('mqdefault.jpg');"></p> -->
+        <!-- ul>li*3 -->
+        <!-- <nav >
+            <ul>
+
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav> -->
+        <nav>
+            <ul  class ="nav_ul">
+                <li class="list">HOME</li>
+                <li class="list">ABOUT</li>
+                <li class="list">CONTACT</li>
+            </ul>
+        </nav>
+        <h1 style="height: 100px;"><dialog>tag</h1>
+        <dialog open>
+        <form action="index.html" method="post"></form>
+        <input type="text" placeholder="Enter your name" name="username" id="user">
+        <br>
+        <br>
+        <input type="password" placeholder="Enter your password" name="password" id="pass">
+        <br>
+        <br>
+        <hr>
+        <br>
+        <input type="button" value="login" onclick="login_Authentication()">
+        
+        
+        <script src="" async defer></script>
+        <img src="fire.avif" alt="NoImage">
+    </dialog> 
+    <!-- <video src="<iframe width="160" height="115" src="https://www.youtube.com/embed/n0ciQf4HDxg?si=FKv036JY_KYEasGJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>"> -->
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/n0ciQf4HDxg?si=FKv036JY_KYEasGJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gU74mNz64VU?si=eAFtkh5DkkCC62Kf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/M_2JDGo4-j4?si=4HSnTQxwSDKDTY77" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </body>
+    <script>
+        // let a=10;   //global scope
+        // var b=20     //local scope
+        let username=document.getElementById('user');
+        let password=document.getElementById('pass');
+        function login_Authentication(){
+                if(username.value=='yash' && password.value=='123')
+                {
+                    document.write("login successfully")
+
+                }else{
+                    document.write("not login fully")
+                }
+        }
+
+    </script>
+</html>
